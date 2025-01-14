@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-347f49e7a7cb77fc807d9bc692d882f4"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "Highest Offense Description", "title": "Offense Type", "type": "nominal"}, {"field": "Clearance Rate", "format": ".2f", "title": "Clearance Rate (%)", "type": "quantitative"}, {"field": "Total_Incidents", "title": "Total Incidents", "type": "quantitative"}], "x": {"field": "Highest Offense Description", "sort": "-y", "title": "Offense Type", "type": "nominal"}, "y": {"field": "Clearance Rate", "title": "Clearance Rate (%)", "type": "quantitative"}}, "height": 400, "title": "Clearance Rates by Offense Type (Top 10 Offenses)", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-347f49e7a7cb77fc807d9bc692d882f4": [{"Highest Offense Description": "FAMILY DISTURBANCE", "Total_Incidents": 36, "Cleared_Incidents": 0, "Clearance Rate": 0.0}, {"Highest Offense Description": "CRIMINAL MISCHIEF", "Total_Incidents": 23, "Cleared_Incidents": 1, "Clearance Rate": 4.3478260869565215}, {"Highest Offense Description": "AUTO THEFT", "Total_Incidents": 19, "Cleared_Incidents": 2, "Clearance Rate": 10.526315789473683}, {"Highest Offense Description": "ASSAULT WITH INJURY", "Total_Incidents": 16, "Cleared_Incidents": 4, "Clearance Rate": 25.0}, {"Highest Offense Description": "ASSAULT W/INJURY-FAM/DATE VIOL", "Total_Incidents": 15, "Cleared_Incidents": 8, "Clearance Rate": 53.333333333333336}, {"Highest Offense Description": "BURGLARY OF VEHICLE", "Total_Incidents": 14, "Cleared_Incidents": 0, "Clearance Rate": 0.0}, {"Highest Offense Description": "THEFT", "Total_Incidents": 10, "Cleared_Incidents": 2, "Clearance Rate": 20.0}, {"Highest Offense Description": "POSS CONTROLLED SUB/NARCOTIC", "Total_Incidents": 9, "Cleared_Incidents": 6, "Clearance Rate": 66.66666666666666}, {"Highest Offense Description": "POSSESSION OF MARIJUANA", "Total_Incidents": 9, "Cleared_Incidents": 0, "Clearance Rate": 0.0}, {"Highest Offense Description": "DISTURBANCE - OTHER", "Total_Incidents": 8, "Cleared_Incidents": 0, "Clearance Rate": 0.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

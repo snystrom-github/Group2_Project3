@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-dbeb16585a0c1480cab753e6b7e25499"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "Council District", "type": "quantitative"}, {"field": "Incident Count", "type": "quantitative"}], "x": {"field": "Council District", "sort": "-y", "title": "Council District", "type": "nominal"}, "y": {"field": "Incident Count", "title": "Incident Count", "type": "quantitative"}}, "height": 400, "title": "Incident Concentrations by Council District", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-dbeb16585a0c1480cab753e6b7e25499": [{"Council District": 1.0, "Incident Count": 31}, {"Council District": 2.0, "Incident Count": 32}, {"Council District": 3.0, "Incident Count": 48}, {"Council District": 4.0, "Incident Count": 51}, {"Council District": 5.0, "Incident Count": 23}, {"Council District": 6.0, "Incident Count": 14}, {"Council District": 7.0, "Incident Count": 22}, {"Council District": 8.0, "Incident Count": 18}, {"Council District": 9.0, "Incident Count": 37}, {"Council District": 10.0, "Incident Count": 18}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
