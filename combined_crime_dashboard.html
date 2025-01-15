@@ -1,0 +1,1013 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Data Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+    <h1>Crime Data Dashboard</h1>
+
+    <h2>Crime Types by Location</h2>
+    <div id="crime_chart"></div>
+    <script>
+        vegaEmbed("#crime_chart", {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-e0643e985d223ce957107bc466cebdea"
+  },
+  "datasets": {
+    "data-e0643e985d223ce957107bc466cebdea": [
+      {
+        "Count": 1,
+        "Highest Offense Description": "VIOL OF CAMPING ORDINANCE",
+        "Location Type": "ABANDONED/CONDEMNED STRUCTURE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "AIRPORT PLACES WEAPON PROHIBIT",
+        "Location Type": "AIR / BUS / TRAIN TERMINAL"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT BY CONTACT",
+        "Location Type": "AIR / BUS / TRAIN TERMINAL"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "FAMILY DISTURBANCE",
+        "Location Type": "AIR / BUS / TRAIN TERMINAL"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "CRUELTY TO ANIMALS",
+        "Location Type": "AUTO DEALERSHIP NEW / USED"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "FRAUD - OTHER",
+        "Location Type": "BANK / SAVINGS & LOAN"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DWI",
+        "Location Type": "BAR / NIGHTCLUB"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "IMPERSONATING PUBLIC SERVANT",
+        "Location Type": "BAR / NIGHTCLUB"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "POSS CONTROLLED SUB/NARCOTIC",
+        "Location Type": "BAR / NIGHTCLUB"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "RESISTING ARREST OR SEARCH",
+        "Location Type": "BAR / NIGHTCLUB"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "THEFT",
+        "Location Type": "BAR / NIGHTCLUB"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "TERRORISTIC THREAT",
+        "Location Type": "CAMP / CAMPGROUND"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "BURGLARY NON RESIDENCE",
+        "Location Type": "CHURCH / SYNAGOGUE / TEMPLE / MOSQUE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "THEFT",
+        "Location Type": "CHURCH / SYNAGOGUE / TEMPLE / MOSQUE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT BY CONTACT",
+        "Location Type": "COMMERCIAL / OFFICE BUILDING"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "CRIMINAL MISCHIEF",
+        "Location Type": "COMMERCIAL / OFFICE BUILDING"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "GRAFFITI",
+        "Location Type": "COMMERCIAL / OFFICE BUILDING"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "HARASSMENT",
+        "Location Type": "COMMERCIAL / OFFICE BUILDING"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "CRIMINAL MISCHIEF",
+        "Location Type": "COMMUNITY CENTER"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "BURGLARY NON RESIDENCE",
+        "Location Type": "CONVENIENCE STORE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DOC DISPLAY GUN/DEADLY PUB PLC",
+        "Location Type": "CONVENIENCE STORE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT WITH INJURY",
+        "Location Type": "DEPARTMENT / DISCOUNT STORE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "BURGLARY NON RESIDENCE",
+        "Location Type": "DEPARTMENT / DISCOUNT STORE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "CRIMINAL MISCHIEF",
+        "Location Type": "DEPARTMENT / DISCOUNT STORE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "FAMILY DISTURBANCE",
+        "Location Type": "DEPARTMENT / DISCOUNT STORE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "THEFT",
+        "Location Type": "DEPARTMENT / DISCOUNT STORE"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "THEFT BY SHOPLIFTING",
+        "Location Type": "DEPARTMENT / DISCOUNT STORE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DOC EXPOSURE",
+        "Location Type": "DRUG STORE / DOCTOR'S OFFICE / HOSPITAL"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "POSS OF DRUG PARAPHERNALIA",
+        "Location Type": "DRUG STORE / DOCTOR'S OFFICE / HOSPITAL"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "BURGLARY OF VEHICLE",
+        "Location Type": "FIELD / WOODS"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "FAILURE TO REG AS SEX OFFENDER",
+        "Location Type": "GOVERNMENT / PUBLIC BUILDING"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "THEFT",
+        "Location Type": "GOVERNMENT / PUBLIC BUILDING"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "THEFT",
+        "Location Type": "GROCERY / SUPERMARKET"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "THEFT OF LICENSE PLATE",
+        "Location Type": "GROCERY / SUPERMARKET"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT W/INJURY-FAM/DATE VIOL",
+        "Location Type": "HOTEL / MOTEL / ETC."
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "AUTO THEFT",
+        "Location Type": "HOTEL / MOTEL / ETC."
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "FAMILY DISTURBANCE",
+        "Location Type": "HOTEL / MOTEL / ETC."
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "RESISTING ARREST OR SEARCH",
+        "Location Type": "HOTEL / MOTEL / ETC."
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "THEFT",
+        "Location Type": "HOTEL / MOTEL / ETC."
+      },
+      {
+        "Count": 3,
+        "Highest Offense Description": "AGG ASSAULT",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "AGG ASSAULT WITH MOTOR VEH",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT BY THREAT",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 7,
+        "Highest Offense Description": "ASSAULT WITH INJURY",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 5,
+        "Highest Offense Description": "AUTO THEFT",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "BURGLARY OF VEHICLE",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 3,
+        "Highest Offense Description": "CRASH/FAIL STOP AND RENDER AID",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 3,
+        "Highest Offense Description": "CRIMINAL MISCHIEF",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DEADLY CONDUCT",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DEL CONTROLLED SUB/NARCOTIC",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 6,
+        "Highest Offense Description": "DWI",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DWI  .15 BAC OR ABOVE",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "DWI - DRUG RECOGNITION EXPERT",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "EVADING / FOOT",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "EVADING VEHICLE",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "FAILURE TO REG AS SEX OFFENDER",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "FAMILY DISTURBANCE",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "HARASSMENT",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "INTERFERE W PO SERVICE ANIMALS",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 4,
+        "Highest Offense Description": "POSS CONTROLLED SUB/NARCOTIC",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "POSS CONTROLLED SUB/OTHER",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 6,
+        "Highest Offense Description": "POSS OF DRUG PARAPHERNALIA",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "POSS OF FIREARM BY FELON",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 8,
+        "Highest Offense Description": "POSSESSION OF MARIJUANA",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "RESISTING ARREST OR SEARCH",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ROBBERY BY THREAT",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "TERRORISTIC THREAT-FAM/DAT VIO",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "THEFT",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "THEFT FROM AUTO",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 3,
+        "Highest Offense Description": "UNLAWFUL CARRYING WEAPON",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "UNLAWFUL RESTRAINT FAM/DAT VIO",
+        "Location Type": "HWY / ROAD / ALLEY/ STREET/ SIDEWALK"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT W/INJURY-FAM/DATE VIOL",
+        "Location Type": "OTHER / UNKNOWN"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "CRIMINAL MISCHIEF",
+        "Location Type": "OTHER / UNKNOWN"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "CRIMINAL MISCHIEF-NO SUSPECT",
+        "Location Type": "OTHER / UNKNOWN"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "FAILURE TO REG AS SEX OFFENDER",
+        "Location Type": "OTHER / UNKNOWN"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "RAPE OF A CHILD",
+        "Location Type": "OTHER / UNKNOWN"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "THEFT",
+        "Location Type": "OTHER / UNKNOWN"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "AGG ASSAULT FAM/DATE VIOLENCE",
+        "Location Type": "PARK / PLAYGROUND"
+      },
+      {
+        "Count": 5,
+        "Highest Offense Description": "BURGLARY OF VEHICLE",
+        "Location Type": "PARK / PLAYGROUND"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "AGG ASSAULT",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "AGG KIDNAPPING",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "AGG ROBBERY/DEADLY WEAPON",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT BY THREAT",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT W/INJURY-FAM/DATE VIOL",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT WITH INJURY",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 7,
+        "Highest Offense Description": "AUTO THEFT",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 5,
+        "Highest Offense Description": "BURGLARY OF VEHICLE",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 9,
+        "Highest Offense Description": "CRIMINAL MISCHIEF",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "CRIMINAL TRESPASS",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DAMAGE CITY VEHICLE",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DEL CONTROLLED SUB/NARCOTIC",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DOC FIGHTING",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "FELONY ENHANCEMENT/ASSLT W/INJ",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "INJURY TO ELDERLY PERSON",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "POSS CONTROLLED SUB/NARCOTIC",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "POSSESSION OF MARIJUANA",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ROBBERY BY ASSAULT",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "VIOL STATE LAW - OTHER",
+        "Location Type": "PARKING /DROP LOT/ GARAGE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "BURGLARY OF SHED/DETACHED GARAGE/STORAGE UNIT",
+        "Location Type": "RENTAL STORAGE FACILITY"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ABUSE OF 911",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "AGG ASLT ENHANC STRANGL/SUFFOC",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "AGG ASLT STRANGLE/SUFFOCATE",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "AGG ASSAULT",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 3,
+        "Highest Offense Description": "AGG ASSAULT FAM/DATE VIOLENCE",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "AGG ROBBERY/DEADLY WEAPON",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 3,
+        "Highest Offense Description": "ASSAULT BY CONTACT",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 4,
+        "Highest Offense Description": "ASSAULT BY CONTACT FAM/DATING",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "ASSAULT BY THREAT FAM/DATING",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT OF A PREGNANT WOMAN",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 12,
+        "Highest Offense Description": "ASSAULT W/INJURY-FAM/DATE VIOL",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 5,
+        "Highest Offense Description": "ASSAULT WITH INJURY",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 5,
+        "Highest Offense Description": "AUTO THEFT",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "BURGLARY OF RESIDENCE",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "BURGLARY OF VEHICLE",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "CHILD CUSTODY INTERFERE",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 7,
+        "Highest Offense Description": "CRIMINAL MISCHIEF",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "CRIMINAL TRESPASS",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 3,
+        "Highest Offense Description": "CRUELTY TO ANIMALS",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 3,
+        "Highest Offense Description": "DATING DISTURBANCE",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "DEADLY CONDUCT",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 8,
+        "Highest Offense Description": "DISTURBANCE - OTHER",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DOC DISCHARGE GUN - PUB PLACE",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DOC EXPOSURE",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "EVADING / FOOT",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 32,
+        "Highest Offense Description": "FAMILY DISTURBANCE",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "FAMILY DISTURBANCE/PARENTAL",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "FORGERY - OTHER",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "HARASSMENT",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 3,
+        "Highest Offense Description": "MAIL THEFT",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "POSS CONTROLLED SUB/NARCOTIC",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "TERRORISTIC THREAT",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 3,
+        "Highest Offense Description": "THEFT OF LICENSE PLATE",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "VIOL OF BOND CONDITIONS",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 3,
+        "Highest Offense Description": "VIOL OF PROTECTIVE ORDER OR BOND FV/SEX CRIME/HUMAN TRAFFICKING",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "VIOL TEMP EX PARTE  ORDER",
+        "Location Type": "RESIDENCE / HOME"
+      },
+      {
+        "Count": 2,
+        "Highest Offense Description": "BURGLARY NON RESIDENCE",
+        "Location Type": "RESTAURANT"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "BURGLARY OF VEHICLE",
+        "Location Type": "RESTAURANT"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "DWI",
+        "Location Type": "RESTAURANT"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "TERRORISTIC THREAT-MASS CASLTY",
+        "Location Type": "RESTAURANT"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "AUTO THEFT",
+        "Location Type": "SERVICE/ GAS STATION"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "POSS CONTROLLED SUB/NARCOTIC",
+        "Location Type": "SERVICE/ GAS STATION"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT WITH INJURY",
+        "Location Type": "SHELTER-MISSION / HOMELESS"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "THEFT",
+        "Location Type": "SHOPPING MALL"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "THEFT FROM PERSON",
+        "Location Type": "SHOPPING MALL"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ASSAULT WITH INJURY",
+        "Location Type": "SPECIALTY  STORE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "BURGLARY NON RESIDENCE",
+        "Location Type": "SPECIALTY  STORE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "MAIL THEFT",
+        "Location Type": "SPECIALTY  STORE"
+      },
+      {
+        "Count": 1,
+        "Highest Offense Description": "ROBBERY BY ASSAULT",
+        "Location Type": "SPECIALTY  STORE"
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "Highest Offense Description",
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Location Type",
+        "type": "nominal"
+      },
+      {
+        "field": "Highest Offense Description",
+        "type": "nominal"
+      },
+      {
+        "field": "Count",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Location Type",
+      "sort": "-y",
+      "title": "Location Type",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "Count",
+      "title": "Crime Count",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "mark": {
+    "type": "bar"
+  },
+  "title": "Crime Types by Location",
+  "width": 600
+}).catch(console.error);
+    </script>
+
+    <h2>Clearance Rates by Offense</h2>
+    <div id="clearance_chart"></div>
+    <script>
+        vegaEmbed("#clearance_chart", {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-347f49e7a7cb77fc807d9bc692d882f4"
+  },
+  "datasets": {
+    "data-347f49e7a7cb77fc807d9bc692d882f4": [
+      {
+        "Clearance Rate": 0.0,
+        "Cleared_Incidents": 0,
+        "Highest Offense Description": "FAMILY DISTURBANCE",
+        "Total_Incidents": 36
+      },
+      {
+        "Clearance Rate": 4.3478260869565215,
+        "Cleared_Incidents": 1,
+        "Highest Offense Description": "CRIMINAL MISCHIEF",
+        "Total_Incidents": 23
+      },
+      {
+        "Clearance Rate": 10.526315789473683,
+        "Cleared_Incidents": 2,
+        "Highest Offense Description": "AUTO THEFT",
+        "Total_Incidents": 19
+      },
+      {
+        "Clearance Rate": 25.0,
+        "Cleared_Incidents": 4,
+        "Highest Offense Description": "ASSAULT WITH INJURY",
+        "Total_Incidents": 16
+      },
+      {
+        "Clearance Rate": 53.333333333333336,
+        "Cleared_Incidents": 8,
+        "Highest Offense Description": "ASSAULT W/INJURY-FAM/DATE VIOL",
+        "Total_Incidents": 15
+      },
+      {
+        "Clearance Rate": 0.0,
+        "Cleared_Incidents": 0,
+        "Highest Offense Description": "BURGLARY OF VEHICLE",
+        "Total_Incidents": 14
+      },
+      {
+        "Clearance Rate": 20.0,
+        "Cleared_Incidents": 2,
+        "Highest Offense Description": "THEFT",
+        "Total_Incidents": 10
+      },
+      {
+        "Clearance Rate": 66.66666666666666,
+        "Cleared_Incidents": 6,
+        "Highest Offense Description": "POSS CONTROLLED SUB/NARCOTIC",
+        "Total_Incidents": 9
+      },
+      {
+        "Clearance Rate": 0.0,
+        "Cleared_Incidents": 0,
+        "Highest Offense Description": "POSSESSION OF MARIJUANA",
+        "Total_Incidents": 9
+      },
+      {
+        "Clearance Rate": 0.0,
+        "Cleared_Incidents": 0,
+        "Highest Offense Description": "DISTURBANCE - OTHER",
+        "Total_Incidents": 8
+      }
+    ]
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "Highest Offense Description",
+        "type": "nominal"
+      },
+      {
+        "field": "Clearance Rate",
+        "type": "quantitative"
+      },
+      {
+        "field": "Total_Incidents",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Highest Offense Description",
+      "sort": "-y",
+      "title": "Offense Type",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "Clearance Rate",
+      "title": "Clearance Rate (%)",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "mark": {
+    "type": "bar"
+  },
+  "title": "Clearance Rates by Offense Type (Top 10 Offenses)",
+  "width": 600
+}).catch(console.error);
+    </script>
+
+    <h2>Incident Concentrations by District</h2>
+    <div id="district_chart"></div>
+    <script>
+        vegaEmbed("#district_chart", {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-dbeb16585a0c1480cab753e6b7e25499"
+  },
+  "datasets": {
+    "data-dbeb16585a0c1480cab753e6b7e25499": [
+      {
+        "Council District": 1.0,
+        "Incident Count": 31
+      },
+      {
+        "Council District": 2.0,
+        "Incident Count": 32
+      },
+      {
+        "Council District": 3.0,
+        "Incident Count": 48
+      },
+      {
+        "Council District": 4.0,
+        "Incident Count": 51
+      },
+      {
+        "Council District": 5.0,
+        "Incident Count": 23
+      },
+      {
+        "Council District": 6.0,
+        "Incident Count": 14
+      },
+      {
+        "Council District": 7.0,
+        "Incident Count": 22
+      },
+      {
+        "Council District": 8.0,
+        "Incident Count": 18
+      },
+      {
+        "Council District": 9.0,
+        "Incident Count": 37
+      },
+      {
+        "Council District": 10.0,
+        "Incident Count": 18
+      }
+    ]
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "Council District",
+        "type": "quantitative"
+      },
+      {
+        "field": "Incident Count",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "field": "Council District",
+      "sort": "-y",
+      "title": "Council District",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "Incident Count",
+      "title": "Incident Count",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "mark": {
+    "type": "bar"
+  },
+  "title": "Incident Concentrations by Council District",
+  "width": 600
+}).catch(console.error);
+    </script>
+
+</body>
+</html>
